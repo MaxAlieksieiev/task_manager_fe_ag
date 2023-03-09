@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {RouterModule} from "@angular/router";
 
 import { APP_ROUTES } from './app.routes'
+import {AuthModule} from "./auth/auth.module";
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { APP_ROUTES } from './app.routes'
   ],
   imports: [
     BrowserModule,
+    AuthModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(APP_ROUTES)
   ],
