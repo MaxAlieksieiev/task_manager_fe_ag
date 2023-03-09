@@ -1,0 +1,31 @@
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: #FAFAFA;
+}
+.right-side{
+  background-image: url("/assets/images/Background.png");
+  background-repeat: no-repeat;
+  max-width: 688px;
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  margin-left: 170px;
+}
+.left-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.form-wrapper {
+  padding: 40px;
+  border: 1px solid #DEC6EE;
+  box-shadow: 0 2px 15px rgba(136, 76, 178, 0.04);
+  border-radius: 10px;
+}

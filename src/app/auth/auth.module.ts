@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoginPageComponent } from './login-page/login-page.component';
 import { RouterModule } from "@angular/router";
-import { RegistrationPageComponent } from './registration-page/registration-page.component';
-
+import { AuthComponent } from "./auth.component";
+import { LoginPageModule } from "./login-page/login-page.module";
+import { RegistrationPageModule } from "./registration-page/registration-page.module";
 
 
 @NgModule({
   declarations: [
-    LoginPageComponent,
-    RegistrationPageComponent
+    AuthComponent
   ],
   imports: [
     CommonModule,
+    LoginPageModule,
+    RegistrationPageModule,
     RouterModule
   ]
 })
