@@ -7,6 +7,8 @@ import {RouterModule} from "@angular/router";
 
 import { APP_ROUTES } from './app.routes'
 import {AuthModule} from "./auth/auth.module";
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import {AuthModule} from "./auth/auth.module";
     BrowserModule,
     AuthModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(APP_ROUTES)
+    RouterModule.forRoot(APP_ROUTES),
+    HttpClientModule,
+    TranslocoRootModule
   ],
   providers: [],
   bootstrap: [AppComponent]
